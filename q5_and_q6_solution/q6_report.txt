@@ -1,0 +1,927 @@
+==== Automated License Plate Similarity Tests ====
+
+Total tests run: 1000
+✅ Passed: 951
+❌ Failed: 49
+⚠️ Skipped: 0
+
+---- Failed Test Details ----
+test/test_license_plate.py::test_valid_plates[OX11CL2979-KV88BV3864]
+s1 = 'OX11CL2979', s2 = 'KV88BV3864'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         OX11CL2979 vs KV88BV3864
+E         Report:
+E         Mismatch: OX11CL2979 -> KV88BV3864
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[MG68ZB0650-FS97OF4332]
+s1 = 'MG68ZB0650', s2 = 'FS97OF4332'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         MG68ZB0650 vs FS97OF4332
+E         Report:
+E         Mismatch: MG68ZB0650 -> FS97OF4332
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[FN98SL9288-DV06PC3013]
+s1 = 'FN98SL9288', s2 = 'DV06PC3013'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         FN98SL9288 vs DV06PC3013
+E         Report:
+E         Mismatch: FN98SL9288 -> DV06PC3013
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[AM47MR7221-WK95TH3688]
+s1 = 'AM47MR7221', s2 = 'WK95TH3688'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         AM47MR7221 vs WK95TH3688
+E         Report:
+E         Mismatch: AM47MR7221 -> WK95TH3688
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[IC93GQ2330-TH14SF4841]
+s1 = 'IC93GQ2330', s2 = 'TH14SF4841'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         IC93GQ2330 vs TH14SF4841
+E         Report:
+E         Mismatch: IC93GQ2330 -> TH14SF4841
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[QF41WQ3184-RL97HR9260]
+s1 = 'QF41WQ3184', s2 = 'RL97HR9260'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         QF41WQ3184 vs RL97HR9260
+E         Report:
+E         Mismatch: QF41WQ3184 -> RL97HR9260
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[XL69IS9516-UF74WV4822]
+s1 = 'XL69IS9516', s2 = 'UF74WV4822'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         XL69IS9516 vs UF74WV4822
+E         Report:
+E         Mismatch: XL69IS9516 -> UF74WV4822
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_valid_plates[PM66IL8747-NZ25CQ5939]
+s1 = 'PM66IL8747', s2 = 'NZ25CQ5939'
+
+    @pytest.mark.parametrize("s1, s2", valid_pairs)
+    def test_valid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Valid plates should almost always have some similarity
+>       assert similarity > 0, f"Valid plates wrongly returned 0%\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Valid plates wrongly returned 0%
+E         PM66IL8747 vs NZ25CQ5939
+E         Report:
+E         Mismatch: PM66IL8747 -> NZ25CQ5939
+E       assert 0.0 > 0
+
+test\test_license_plate.py:37: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[itltjgxizo-bfwtsygero]
+s1 = 'itltjgxizo', s2 = 'bfwtsygero'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         itltjgxizo vs bfwtsygero
+E         Report:
+E         Mismatch: i -> bfw
+E         Match: t
+E         Mismatch: ltj -> sy
+E         Match: g
+E         Mismatch: xiz -> er
+E         Match: o
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[73362188-27094271]
+s1 = '73362188', s2 = '27094271'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         73362188 vs 27094271
+E         Report:
+E         Inserted: 2
+E         Match: 7
+E         Mismatch: 336 -> 094
+E         Match: 2
+E         Inserted: 7
+E         Match: 1
+E         Deleted: 88
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB0]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB1]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB2]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[13305132-48303174]
+s1 = '13305132', s2 = '48303174'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         13305132 vs 48303174
+E         Report:
+E         Mismatch: 13 -> 48
+E         Match: 30
+E         Mismatch: 5 -> 3
+E         Match: 1
+E         Mismatch: 32 -> 74
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB3]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[F1EDLTODP0E4-16130594]
+s1 = 'F1EDLTODP0E4', s2 = '16130594'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         F1EDLTODP0E4 vs 16130594
+E         Report:
+E         Deleted: F
+E         Match: 1
+E         Mismatch: EDLTODP -> 613
+E         Match: 0
+E         Mismatch: E -> 59
+E         Match: 4
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[05344983-84831604]
+s1 = '05344983', s2 = '84831604'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         05344983 vs 84831604
+E         Report:
+E         Mismatch: 053 -> 8
+E         Match: 4
+E         Deleted: 49
+E         Match: 83
+E         Inserted: 1604
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-CHDBO]
+s1 = '1234MHAB', s2 = 'CHDBO'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.76923076923077%)
+E         1234MHAB vs CHDBO
+E         Report:
+E         Mismatch: 1234M -> C
+E         Match: H
+E         Mismatch: A -> D
+E         Match: B
+E         Inserted: O
+E       assert 30.76923076923077 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB4]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[77924801-87473941]
+s1 = '77924801', s2 = '87473941'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (62.5%)
+E         77924801 vs 87473941
+E         Report:
+E         Inserted: 8
+E         Match: 7
+E         Inserted: 4
+E         Match: 7
+E         Inserted: 3
+E         Match: 9
+E         Deleted: 2
+E         Match: 4
+E         Deleted: 80
+E         Match: 1
+E       assert 62.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB5]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB6]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[uqdctjmmzq-emeqrojjcz]
+s1 = 'uqdctjmmzq', s2 = 'emeqrojjcz'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         uqdctjmmzq vs emeqrojjcz
+E         Report:
+E         Mismatch: u -> eme
+E         Match: q
+E         Mismatch: d -> rojj
+E         Match: c
+E         Deleted: tjmm
+E         Match: z
+E         Deleted: q
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB7]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[LSFZD-SVHXF]
+s1 = 'LSFZD', s2 = 'SVHXF'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (40.0%)
+E         LSFZD vs SVHXF
+E         Report:
+E         Deleted: L
+E         Match: S
+E         Inserted: VHX
+E         Match: F
+E         Deleted: ZD
+E       assert 40.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[15305910-NV4X1FOGI5J1]
+s1 = '15305910', s2 = 'NV4X1FOGI5J1'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         15305910 vs NV4X1FOGI5J1
+E         Report:
+E         Inserted: NV4X
+E         Match: 1
+E         Inserted: FOGI
+E         Match: 5
+E         Mismatch: 3059 -> J
+E         Match: 1
+E         Deleted: 0
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[88087082-68338140]
+s1 = '88087082', s2 = '68338140'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         88087082 vs 68338140
+E         Report:
+E         Inserted: 6
+E         Match: 8
+E         Inserted: 33
+E         Match: 8
+E         Inserted: 14
+E         Match: 0
+E         Deleted: 87082
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[90319139-91494937]
+s1 = '90319139', s2 = '91494937'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         90319139 vs 91494937
+E         Report:
+E         Deleted: 9031
+E         Match: 91
+E         Inserted: 4949
+E         Match: 3
+E         Mismatch: 9 -> 7
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[51651231-1234MHAB]
+s1 = '51651231', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         51651231 vs 1234MHAB
+E         Report:
+E         Deleted: 5165
+E         Match: 123
+E         Mismatch: 1 -> 4MHAB
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-16243603]
+s1 = '1234MHAB', s2 = '16243603'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         1234MHAB vs 16243603
+E         Report:
+E         Match: 1
+E         Inserted: 6
+E         Match: 2
+E         Inserted: 4
+E         Match: 3
+E         Mismatch: 4MHAB -> 603
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-631GZM4FG16B]
+s1 = '1234MHAB', s2 = '631GZM4FG16B'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         1234MHAB vs 631GZM4FG16B
+E         Report:
+E         Inserted: 63
+E         Match: 1
+E         Mismatch: 23 -> GZM
+E         Match: 4
+E         Mismatch: MHA -> FG16
+E         Match: B
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[39876704-97082311]
+s1 = '39876704', s2 = '97082311'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         39876704 vs 97082311
+E         Report:
+E         Deleted: 3
+E         Match: 9
+E         Deleted: 876
+E         Match: 70
+E         Mismatch: 4 -> 82311
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-25643604]
+s1 = '1234MHAB', s2 = '25643604'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         1234MHAB vs 25643604
+E         Report:
+E         Deleted: 1
+E         Match: 2
+E         Inserted: 564
+E         Match: 3
+E         Inserted: 60
+E         Match: 4
+E         Deleted: MHAB
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[65903575-97030384]
+s1 = '65903575', s2 = '97030384'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         65903575 vs 97030384
+E         Report:
+E         Deleted: 65
+E         Match: 9
+E         Inserted: 7
+E         Match: 03
+E         Mismatch: 575 -> 0384
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB8]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[01RH4XRQR6MG-80056163]
+s1 = '01RH4XRQR6MG', s2 = '80056163'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         01RH4XRQR6MG vs 80056163
+E         Report:
+E         Inserted: 8
+E         Match: 0
+E         Inserted: 056
+E         Match: 1
+E         Deleted: RH4XRQR
+E         Match: 6
+E         Mismatch: MG -> 3
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB9]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[FWVJS-ZV465IJSSWTQ]
+s1 = 'FWVJS', s2 = 'ZV465IJSSWTQ'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (35.294117647058826%)
+E         FWVJS vs ZV465IJSSWTQ
+E         Report:
+E         Mismatch: FW -> Z
+E         Match: V
+E         Inserted: 465I
+E         Match: JS
+E         Inserted: SWTQ
+E       assert 35.294117647058826 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB10]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[owhvbunwlv-ouxbofnfki]
+s1 = 'owhvbunwlv', s2 = 'ouxbofnfki'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         owhvbunwlv vs ouxbofnfki
+E         Report:
+E         Match: o
+E         Mismatch: whv -> ux
+E         Match: b
+E         Mismatch: u -> of
+E         Match: n
+E         Mismatch: wlv -> fki
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[afhdsyxcjp-ucrsxijngq]
+s1 = 'afhdsyxcjp', s2 = 'ucrsxijngq'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (30.0%)
+E         afhdsyxcjp vs ucrsxijngq
+E         Report:
+E         Mismatch: afhd -> ucr
+E         Match: s
+E         Deleted: y
+E         Match: x
+E         Mismatch: c -> i
+E         Match: j
+E         Mismatch: p -> ngq
+E       assert 30.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB11]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[29347403-71263871]
+s1 = '29347403', s2 = '71263871'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         29347403 vs 71263871
+E         Report:
+E         Inserted: 71
+E         Match: 2
+E         Mismatch: 9 -> 6
+E         Match: 3
+E         Mismatch: 4 -> 8
+E         Match: 7
+E         Mismatch: 403 -> 1
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[29198050-20709680]
+s1 = '29198050', s2 = '20709680'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (50.0%)
+E         29198050 vs 20709680
+E         Report:
+E         Match: 2
+E         Inserted: 070
+E         Match: 9
+E         Mismatch: 19 -> 6
+E         Match: 80
+E         Deleted: 50
+E       assert 50.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[SBAGM-QPISB]
+s1 = 'SBAGM', s2 = 'QPISB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (40.0%)
+E         SBAGM vs QPISB
+E         Report:
+E         Inserted: QPI
+E         Match: SB
+E         Deleted: AGM
+E       assert 40.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB12]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[QLRKW-ECJQ5O3DLK4P]
+s1 = 'QLRKW', s2 = 'ECJQ5O3DLK4P'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (35.294117647058826%)
+E         QLRKW vs ECJQ5O3DLK4P
+E         Report:
+E         Inserted: ECJ
+E         Match: Q
+E         Inserted: 5O3D
+E         Match: L
+E         Deleted: R
+E         Match: K
+E         Mismatch: W -> 4P
+E       assert 35.294117647058826 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[94096510-41800121]
+s1 = '94096510', s2 = '41800121'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (37.5%)
+E         94096510 vs 41800121
+E         Report:
+E         Deleted: 9
+E         Match: 4
+E         Inserted: 18
+E         Match: 0
+E         Mismatch: 965 -> 0
+E         Match: 1
+E         Mismatch: 0 -> 21
+E       assert 37.5 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
+test/test_license_plate.py::test_invalid_plates[1234MHAB-1234MHAB13]
+s1 = '1234MHAB', s2 = '1234MHAB'
+
+    @pytest.mark.parametrize("s1, s2", invalid_pairs)
+    def test_invalid_plates(s1, s2):
+        similarity, report = string_similarity(s1, s2)
+        # Invalid plates can have random similarity, but it must stay under 25%
+>       assert 0 <= similarity <= 25, f"Invalid plate similarity too high ({similarity}%)\n{s1} vs {s2}\nReport:\n{report}"
+E       AssertionError: Invalid plate similarity too high (100.0%)
+E         1234MHAB vs 1234MHAB
+E         Report:
+E         Match: 1234MHAB
+E       assert 100.0 <= 25
+
+test\test_license_plate.py:44: AssertionError
+
