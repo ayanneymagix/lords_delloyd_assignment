@@ -1,8 +1,8 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: license-plate-5/data.yaml
-epochs: 200
+data: license-dataset/data.yaml
+epochs: 300
 time: null
 patience: 100
 batch: 16
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: C:\Users\syed sameer\OneDrive\Desktop\license-plate123\runs\detect\train
+save_dir: C:\Users\syed sameer\OneDrive\Desktop\liet_delloyd home assignment\q1_solution\runs\detect\train
