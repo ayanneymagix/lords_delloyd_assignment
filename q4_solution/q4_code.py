@@ -1,57 +1,80 @@
 import cv2
+import mediapipe as mp
+import os
 
-# Load Haar Cascade for face detection
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+# Initialize Mediapipe Face Detection
+mp_face = mp.solutions.face_detection
+mp_draw = mp.solutions.drawing_utils
 
-# Capture video from webcam (0 = default webcam, change index if needed)
+# Open webcam
 cap = cv2.VideoCapture(0)
 
-# Video writer setup (will initialize when saving starts)
+# Setup video writer
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = None
 saving = False
 
-while True:
-    ret, frame = cap.read()
-    if not ret:
-        break
+# Initialize Mediapipe Face Detector
+with mp_face.FaceDetection(model_selection=0, min_detection_confidence=0.5) as face_detection:
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
 
-    # Convert to grayscale for detection
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        # Convert frame to RGB (Mediapipe requires RGB input)
+        rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        results = face_detection.process(rgb_frame)
 
-    # Detect faces
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(60, 60))
+        # If faces detected
+        if results.detections:
+            for det in results.detections:
+                bboxC = det.location_data.relative_bounding_box
+                h, w, _ = frame.shape
+                x = int(bboxC.xmin * w)
+                y = int(bboxC.ymin * h)
+                bw = int(bboxC.width * w)
+                bh = int(bboxC.height * h)
 
-    # Blur detected faces
-    for (x, y, w, h) in faces:
-        roi = frame[y:y+h, x:x+w]
-        roi_blurred = cv2.GaussianBlur(roi, (99, 99), 30)   # strong blur
-        frame[y:y+h, x:x+w] = roi_blurred
+                # Ensure coordinates are within frame bounds
+                x = max(0, x)
+                y = max(0, y)
+                bw = min(w - x, bw)
+                bh = min(h - y, bh)
 
-    # If saving, write the frame
-    if saving and out is not None:
-        out.write(frame)
+                # Blur only the detected face region
+                face_roi = frame[y:y+bh, x:x+bw]
+                if face_roi.size > 0:
+                    face_roi = cv2.GaussianBlur(face_roi, (99, 99), 30)
+                    frame[y:y+bh, x:x+bw] = face_roi
 
-    # Show the output
-    cv2.imshow("Face Blurring - Press 'q' to quit, 's' to save", frame)
+        # Save if toggled
+        if saving and out is not None:
+            out.write(frame)
 
-    key = cv2.waitKey(1) & 0xFF
-    if key == ord('q'):   # quit
-        break
-    elif key == ord('s'):  # toggle saving
-        if not saving:
-            # Start saving
-            out = cv2.VideoWriter("output.avi", fourcc, 20.0, (frame.shape[1], frame.shape[0]))
-            saving = True
-            print("Started saving video...")
-        else:
-            # Stop saving
-            saving = False
-            out.release()
-            out = None
-            print("Stopped saving video.")
+        # Display
+        cv2.imshow("Face-Only Deep Learning Blur (Press 's' to save, 'q' to quit)", frame)
 
-# Release resources
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord('q'):
+            break
+        elif key == ord('s'):
+            if not saving:
+                h, w = frame.shape[:2]
+
+                # ✅ Save video in same folder as this script
+                script_dir = os.path.dirname(os.path.abspath(__file__))
+                save_path = os.path.join(script_dir, "output_faceonly.avi")
+
+                out = cv2.VideoWriter(save_path, fourcc, 20.0, (w, h))
+                saving = True
+                print(f"🎥 Started saving video at: {save_path}")
+            else:
+                saving = False
+                out.release()
+                out = None
+                print("🛑 Stopped saving video.")
+
+# Cleanup
 cap.release()
 if out is not None:
     out.release()

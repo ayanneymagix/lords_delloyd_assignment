@@ -14,7 +14,7 @@ classes = ['broken', 'non broken']
 def predict_image(image_path):
     image = cv2.imread(image_path)
     if image is None:
-        print(f"❌ Could not read image: {image_path}")
+        print(f"Could not read image: {image_path}")
         return None
 
     results = model.predict(source=image_path, verbose=False)
